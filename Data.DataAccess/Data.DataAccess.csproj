@@ -25,12 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Cookbook.Common\Cookbook.Common.csproj" />
-    <ProjectReference Include="..\Cookbook.web\Cookbook.web.csproj" />
     <ProjectReference Include="..\Data.DataModels\Data.DataModels.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="EntityTypeConfigurations\" />
   </ItemGroup>
 
 </Project>

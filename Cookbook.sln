@@ -5,11 +5,11 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cookbook.web", "Cookbook.web\Cookbook.web.csproj", "{250EBB60-0518-4DF6-A0A4-B6C5F1D4FE6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.DataModels", "Data.DataModels\Data.DataModels.csproj", "{CA77B5A3-B246-492D-A3E7-914D39F697B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.DataModels", "Data.DataModels\Data.DataModels.csproj", "{CA77B5A3-B246-492D-A3E7-914D39F697B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.DataAccess", "Data.DataAccess\Data.DataAccess.csproj", "{93CEBB82-1C3F-4DBC-A9B5-61BA23B10F3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.DataAccess", "Data.DataAccess\Data.DataAccess.csproj", "{93CEBB82-1C3F-4DBC-A9B5-61BA23B10F3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cookbook.Common", "Cookbook.Common\Cookbook.Common.csproj", "{C4B9812A-4468-4DB6-9CCA-4D90DD07C83F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cookbook.Common", "Cookbook.Common\Cookbook.Common.csproj", "{C4B9812A-4468-4DB6-9CCA-4D90DD07C83F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
