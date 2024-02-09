@@ -21,7 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Cookbook.Business\Cookbook.Business.csproj" />
     <ProjectReference Include="..\Cookbook.Infrastructure\Cookbook.Infrastructure.csproj" />
+    <ProjectReference Include="..\Cookbook.Web.Models\Cookbook.Web.Models.csproj" />
     <ProjectReference Include="..\Data.DataAccess\Data.DataAccess.csproj" />
     <ProjectReference Include="..\Data.DataModels\Data.DataModels.csproj" />
   </ItemGroup>

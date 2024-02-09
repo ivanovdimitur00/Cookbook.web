@@ -7,17 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cookbook.Web.Models\Cookbook.Web.Models.csproj" />
-    <ProjectReference Include="..\Data.DataAccess\Data.DataAccess.csproj" />
+    <ProjectReference Include="..\Cookbook.Common\Cookbook.Common.csproj" />
     <ProjectReference Include="..\Data.DataModels\Data.DataModels.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
