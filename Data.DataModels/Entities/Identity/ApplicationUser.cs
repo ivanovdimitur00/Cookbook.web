@@ -17,9 +17,9 @@ namespace Data.DataModels.Entities.Identity
             ApplicationUserRoles = new HashSet<ApplicationUserRole>();
             Claims = new HashSet<IdentityUserClaim<string>>();
             Logins = new HashSet<IdentityUserLogin<string>>();
-           //Subtitles = new HashSet<Subtitles>();
-           //Comments = new HashSet<Comment>();
-           //Favourites = new HashSet<Favourites>();
+            Recipes = new HashSet<Recipe>();
+            Comments = new HashSet<Comment>();
+            Favourites = new HashSet<Favourites>();
         }
 
         public DateTime CreatedOn { get; set; }
@@ -30,16 +30,20 @@ namespace Data.DataModels.Entities.Identity
 
         public string PromotionLevel { get; set; }
 
+        public string Nickname { get; set; }
+
+        public bool UseRealName { get; set; }
+
         public virtual ICollection<ApplicationUserRole> ApplicationUserRoles { get; set; }
 
         public virtual ICollection<IdentityUserClaim<string>> Claims { get; set; }
 
         public virtual ICollection<IdentityUserLogin<string>> Logins { get; set; }
 
-        //public virtual ICollection<Subtitles> Subtitles { get; set; }
+        public virtual ICollection<Recipe> Recipes { get; set; }
 
-        //public virtual ICollection<Comment> Comments { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
 
-        //public virtual ICollection<Favourites> Favourites { get; set; }
+        public virtual ICollection<Favourites> Favourites { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Data.DataModels.Entities
     {
         public Country()
         {
-            //FilmProductions = new HashSet<FilmProduction>(); - for recipes when implementing the DB tables
+            Recipes = new HashSet<Recipe>();
         }
 
         [MinLength(2)]
@@ -19,6 +19,6 @@ namespace Data.DataModels.Entities
 
         public string ModifiedBy { get; set; }
 
-        //public virtual ICollection<FilmProduction> FilmProductions { get; set; } -- for recipes when implementing the DB tables
+        public virtual ICollection<Recipe> Recipes { get; set; }
     }
 }
