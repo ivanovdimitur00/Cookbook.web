@@ -38,6 +38,7 @@ namespace Data.DataModels.Entities
 
         public virtual Country Country { get; set; }
 
+        [Required]
         [MinLength(20)]
         [MaxLength(500)]
         public string Description { get; set; }
@@ -47,6 +48,8 @@ namespace Data.DataModels.Entities
         public int PreparationTime { get; set; }
 
         [Required]
+        [MinLength(1)]
+        [MaxLength(16)]
         public string PreparationTimeUnit { get; set; }
 
         [Required]

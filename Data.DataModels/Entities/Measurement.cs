@@ -20,6 +20,7 @@ namespace Data.DataModels.Entities
         public int Quantity { get; set; }
 
         [Required]
+        [MinLength(1)]
         [MaxLength(20)]
         public string Unit { get; set; }
 

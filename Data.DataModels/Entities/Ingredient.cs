@@ -16,9 +16,11 @@ namespace Data.DataModels.Entities
         }
 
         [Required]
+        [MinLength(2)]
         [MaxLength(30)]
         public string Name { get; set; }
-
+        
+        [Required]
         public bool IsAllergen { get; set; }
 
         public virtual ICollection<RecipeIngredients> RecipeIngredients { get; set; }

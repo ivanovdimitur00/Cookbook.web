@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,7 +30,17 @@ namespace Data.DataModels.Entities.Identity
         public PromotionStatus PromotionStatus { get; set; } = PromotionStatus.Neutral;
 
         public string PromotionLevel { get; set; }
-
+        
+        [MinLength(2)]
+        [MaxLength(30)]
+        public string FirstName { get; set; }
+       
+        [MinLength(2)]
+        [MaxLength(30)]
+        public string LastName { get; set; }
+        
+        [MinLength(2)]
+        [MaxLength(30)]
         public string Nickname { get; set; }
 
         public bool UseRealName { get; set; }
