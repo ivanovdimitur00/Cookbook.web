@@ -1,4 +1,4 @@
-﻿namespace SubtitlesManagementSystem.Common.GlobalConstants
+﻿namespace Cookbook.Common.GlobalConstants
 {
     public class DisplayConstants
     {
