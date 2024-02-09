@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Cookbook.Common.GlobalConstants;
+using IdentityConstants = Cookbook.Common.GlobalConstants.IdentityConstants;
 
 namespace Data.DataAccess.Seeding
 {

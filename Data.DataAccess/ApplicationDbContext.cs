@@ -9,9 +9,10 @@ using Cookbook.Common.GlobalConstants;
 
 namespace Data.DataAccess
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string,
-                IdentityUserClaim<string>, ApplicationUserRole, IdentityUserLogin<string>,
-                IdentityRoleClaim<string>, IdentityUserToken<string>>
+    public class ApplicationDbContext : IdentityDbContext<
+        ApplicationUser, ApplicationRole, string,
+        IdentityUserClaim<string>, ApplicationUserRole, IdentityUserLogin<string>,
+        IdentityRoleClaim<string>, IdentityUserToken<string>>
     {
         IConfigurationBuilder _configurationBuilder;
 
@@ -29,6 +30,26 @@ namespace Data.DataAccess
         }
 
         public virtual DbSet<Country> Countries { get; set; }
+
+        public virtual DbSet<Comment> Comments{ get; set; }
+
+        public virtual DbSet<Favourites> Favourites { get; set; }
+
+        public virtual DbSet<Ingredient> Ingredients { get; set; }
+
+        public virtual DbSet<Measurement> Measurements { get; set; }
+
+        public virtual DbSet<PreparationStep> PreparationSteps { get; set; }
+
+        public virtual DbSet<PreparationStepsList> PreparationStepsList { get; set; }
+
+        public virtual DbSet<Recipe> Recipes { get; set; }
+
+        public virtual DbSet<RecipeIngredients> RecipeIngredients { get; set; }
+
+        public virtual DbSet<RecipeTag> RecipeTags { get; set; }
+
+        public virtual DbSet<Tag> Tags { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
         {

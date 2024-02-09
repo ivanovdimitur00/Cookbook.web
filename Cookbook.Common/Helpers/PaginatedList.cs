@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SubtitlesManagementSystem.Common.Helpers
+namespace Cookbook.Common.Helpers
 {
     public class PaginatedList<T> : List<T>
     {

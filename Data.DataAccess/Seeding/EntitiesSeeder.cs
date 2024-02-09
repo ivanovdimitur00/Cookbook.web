@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Cookbook.Common.GlobalConstants;
+using IdentityConstants = Cookbook.Common.GlobalConstants.IdentityConstants;
 
 namespace Data.DataAccess.Seeding
 {
@@ -11,11 +12,6 @@ namespace Data.DataAccess.Seeding
     {
         public async Task<bool> SeedDatabase(ApplicationDbContext applicationDbContext, IServiceProvider serviceProvider)
         {
-            //if (applicationDbContext.Subtitles.Any())
-            //{
-            //    return false;
-            //}
-
             await ExecutePartialSeeders(applicationDbContext, serviceProvider);
 
             return true;
