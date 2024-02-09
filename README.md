@@ -1,20 +1,20 @@
 
 # Cookbook
 
-### a C# .NET Core web project.
+### a C# .NET Core web project. It's about user created recipes in an online platform.
 <br>
 
 ## REQUIREMENTS
 <ol>
-   <li> Must be hosted on a VCS. Like GitHub for example </li>
+   <li> Must be hosted on a VCS. Like GitHub, for example. </li>
    <ol>
-      <li> OPTIONAL: have at least 10 commits over 3 days </li>
+      <li> Have at least 10 commits over 3 days </li>
    </ol>
 </ol>
 
 1. Implement ASP .NET Core Framework; <br>
    1.1. At least 10 views; <br>
-   1.2. At least 5 independent entities with relations one-to-one / one-to-many / many to many; <br>
+   1.2. At least 5 independent entities with relations of type one-to-one / one-to-many / many to many; <br>
    1.3. At least 5 controllers; <br>
    1.4. At least full C.R.U.D. functionality for 3 entities.
 2. Use Visual Studio Community 2022; <br>
@@ -33,11 +33,21 @@
 <br>
 
 ## EXTRAS
-1. Seeding the DB with sample data <br>
-2. Use the repository-service pattern <br>
-3. Filtering information in the form of pagination, sorting and filtering by criteria <br>
-4. Logic separation in MVC Areas and partial views <br>
-5. others (Unit tests, integration tests, implement bootstrap template) <br>
+1. Seeding the DB with sample data; <br>
+2. Use the repository-service pattern; <br>
+3. Filtering information in the form of pagination, sorting and/or filtering by criteria; <br>
+4. Logic separation in MVC Areas and partial views; <br>
+5. others:
+<ul>
+   <ul>
+      <li>Implement a bootstrap template;
+      </li>
+      <li>Do Unit testing;
+      </li>
+      <li>Do Integration testing;
+      </li>
+   </ul>
+</ul>
 <br>
 
 ## USED RESOURCES
@@ -50,4 +60,7 @@
    </li>
    <li>[Recipes Database](https://github.com/gadsone/sql6)
    </li>
+   <li>[Many-to-Many relationsships](https://www.entityframeworktutorial.net/efcore/configure-many-to-many-relationship-in-ef-core.aspx)</li>
+   <li>[One-to-Many relationsships](https://www.entityframeworktutorial.net/code-first/configure-one-to-many-relationship-in-code-first.aspx)</li>
+   <li>[One-to-One relationsships](https://www.entityframeworktutorial.net/code-first/configure-one-to-one-relationship-in-code-first.aspx)</li>
 </ul>
