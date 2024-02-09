@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Data.DataModels.Entities.Identity;
+using System.Xml.Linq;
 
 namespace Data.DataModels.Entities
 {
@@ -15,9 +16,11 @@ namespace Data.DataModels.Entities
     {
         public Recipe()
         {
-            PreparationStepsList = new HashSet<PreparationStepsList>();
             RecipeIngredients = new HashSet<RecipeIngredients>();
+            PreparationStepsList = new HashSet<PreparationStepsList>();
             RecipeTags = new HashSet<RecipeTag>();
+            Comments = new HashSet<Comment>();
+            Favourites = new HashSet<Favourites>();
         }
 
         [Required]
@@ -56,11 +59,15 @@ namespace Data.DataModels.Entities
         [Range(1, 24)]
         public int Servings { get; set; }
 
-        public virtual ICollection<PreparationStepsList> PreparationStepsList { get; set; }
-
         public virtual ICollection<RecipeIngredients> RecipeIngredients { get; set; }
 
+        public virtual ICollection<PreparationStepsList> PreparationStepsList { get; set; }
+
         public virtual ICollection<RecipeTag> RecipeTags { get; set; }
+
+        public virtual ICollection<Comment> Comments { get; set; }
+
+        public virtual ICollection<Favourites> Favourites { get; set; }
 
     }
 }
