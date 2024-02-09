@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.DataModels.Abstraction;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Data.DataModels.Entities
 {
-    public class PreparationStepsList
+    public class PreparationStepsList : BaseEntity
     {
         public string RecipeId { get; set; }
 
