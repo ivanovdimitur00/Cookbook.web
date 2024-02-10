@@ -23,6 +23,10 @@ namespace Data.DataModels.Entities
         [MaxLength(500)]
         public string Description { get; set; }
 
+        public string CreatedBy { get; set; }
+
+        public string ModifiedBy { get; set; }
+
         public virtual ICollection<PreparationStepsList> PreparationStepsList { get; set; }
     }
 }

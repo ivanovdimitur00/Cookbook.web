@@ -4,7 +4,7 @@ namespace Data.DataAccess.Seeding.PartialSeeders
 {
     internal static class CountrySeeder
     {
-        internal static Country[] CountrySeedingArray { get; private set; } = SeedCountries();
+        internal static Country[] countrySeedingArray { get; private set; } = SeedCountries();
 
         private static Country[] SeedCountries()
         {

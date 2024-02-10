@@ -28,95 +28,75 @@ namespace Data.DataAccess.Seeding
                 )
                 .FirstOrDefault();
 
-            //foreach (var actorToSeed in ActorSeeder.ActorSeedingArray)
-            //{
-            //    actorToSeed.CreatedBy = administrator.UserName;
-            //    await applicationDbContext.Actors.AddAsync(actorToSeed);
-            //}
+            foreach (var countryToSeed in CountrySeeder.countrySeedingArray)
+            {
+                countryToSeed.CreatedBy = administrator.UserName;
+                await applicationDbContext.Countries.AddAsync(countryToSeed);
+            }
 
-            //await applicationDbContext.SaveChangesAsync();
+            await applicationDbContext.SaveChangesAsync();
 
-            //foreach (var countryToSeed in CountrySeeder.CountrySeedingArray)
-            //{
-            //    countryToSeed.CreatedBy = administrator.UserName;
-            //    await applicationDbContext.Countries.AddAsync(countryToSeed);
-            //}
+            foreach (var ingredinetToSeed in IngredientSeeder.ingredientSeedingArray)
+            {
+                ingredinetToSeed.CreatedBy = administrator.UserName;
+                await applicationDbContext.Ingredients.AddAsync(ingredinetToSeed);
+            }
 
-            //await applicationDbContext.SaveChangesAsync();
+            await applicationDbContext.SaveChangesAsync();
 
-            //foreach (var directorToSeed in DirectorSeeder.DirectorSeedingArray)
-            //{
-            //    directorToSeed.CreatedBy = administrator.UserName;
-            //    await applicationDbContext.Directors.AddAsync(directorToSeed);
-            //}
+            foreach (var measurementToSeed in MeasurementSeeder.measurementSeedingArray)
+            {
+                measurementToSeed.CreatedBy = administrator.UserName;
+                await applicationDbContext.Measurements.AddAsync(measurementToSeed);
+            }
 
-            //await applicationDbContext.SaveChangesAsync();
+            await applicationDbContext.SaveChangesAsync();
 
-            //foreach (var genreToSeed in GenreSeeder.GenreSeedingArray)
-            //{
-            //    genreToSeed.CreatedBy = administrator.UserName;
-            //    await applicationDbContext.Genres.AddAsync(genreToSeed);
-            //}
+            foreach (var preparationStepToSeed in PreparationStepSeeder.preparationStepSeedingArray)
+            {
+                preparationStepToSeed.CreatedBy = administrator.UserName;
+                await applicationDbContext.PreparationSteps.AddAsync(preparationStepToSeed);
+            }
 
-            //await applicationDbContext.SaveChangesAsync();
+            await applicationDbContext.SaveChangesAsync();
 
-            //foreach (var languageToSeed in LanguageSeeder.LanguageSeedingArray)
-            //{
-            //    languageToSeed.CreatedBy = administrator.UserName;
-            //    await applicationDbContext.Languages.AddAsync(languageToSeed);
-            //}
+            foreach (var preparationStepsListToSeed in PreparationStepsListSeeder.preparationStepsListSeedingArray)
+            {
+                preparationStepsListToSeed.CreatedBy = administrator.UserName;
+                await applicationDbContext.PreparationStepsList.AddAsync(preparationStepsListToSeed);
+            }
 
-            //await applicationDbContext.SaveChangesAsync();
+            await applicationDbContext.SaveChangesAsync();
 
-            //foreach (var screenwriterToSeed in ScreenwriterSeeder.ScreenwriterSeedingArray)
-            //{
-            //    screenwriterToSeed.CreatedBy = administrator.UserName;
-            //    await applicationDbContext.Screenwriters.AddAsync(screenwriterToSeed);
-            //}
+            foreach (var recipeIngredientsToSeed in RecipeIngredientsSeeder.recipeIngredientsSeedingArray)
+            {
+                recipeIngredientsToSeed.CreatedBy = administrator.UserName;
+                await applicationDbContext.RecipeIngredients.AddAsync(recipeIngredientsToSeed);
+            }
 
-            //await applicationDbContext.SaveChangesAsync();
+            await applicationDbContext.SaveChangesAsync();
 
-            //foreach (var filmProductionToSeed in FilmProductionSeeder.FilmProductionSeedingArray)
-            //{
-            //    filmProductionToSeed.CreatedBy = administrator.UserName;
-            //    await applicationDbContext.FilmProductions.AddAsync(filmProductionToSeed);
-            //}
+            foreach (var recipeToSeed in RecipeSeeder.recipeSeedingArray)
+            {
+                recipeToSeed.CreatedBy = administrator.UserName;
+                await applicationDbContext.Recipes.AddAsync(recipeToSeed);
+            }
 
-            //await applicationDbContext.SaveChangesAsync();
+            await applicationDbContext.SaveChangesAsync();
 
-            //foreach (var filmProductionActorsToSeed in FilmProductionActorSeeder.FilmProductionActorSeedingArray)
-            //{
-            //    await applicationDbContext.FilmProductionActors.AddAsync(filmProductionActorsToSeed);
-            //}
+            foreach (var recipeTagToSeed in RecipeTagSeeder.recipeTagSeedingArray)
+            {
+                recipeTagToSeed.CreatedBy = administrator.UserName;
+                await applicationDbContext.RecipeTags.AddAsync(recipeTagToSeed);
+            }
 
-            //await applicationDbContext.SaveChangesAsync();
+            await applicationDbContext.SaveChangesAsync();
 
-            //foreach (var filmProductionDirectorsToSeed in FilmProductionDirectorSeeder.FilmProductionDirectorSeedingArray)
-            //{
-            //    await applicationDbContext.FilmProductionDirectors.AddAsync(filmProductionDirectorsToSeed);
-            //}
-
-            //await applicationDbContext.SaveChangesAsync();
-
-            //foreach (var filmProductionGenresToSeed in FilmProductionGenreSeeder.FilmProductionGenreSeedingArray)
-            //{
-            //    await applicationDbContext.FilmProductionGenres.AddAsync(filmProductionGenresToSeed);
-            //}
-
-            //await applicationDbContext.SaveChangesAsync();
-
-            //foreach (var filmProductionScreenwritersToSeed in FilmProductionScreenwriterSeeder.FilmProductionScreenwriterSeedingArray)
-            //{
-            //    await applicationDbContext.FilmProductionScreenwriters.AddAsync(filmProductionScreenwritersToSeed);
-            //}
-
-            //await applicationDbContext.SaveChangesAsync();
-
-            //foreach (var subtitlesToSeed in SubtitlesSeeder.SubtitlesSeedingArray)
-            //{
-            //    subtitlesToSeed.ApplicationUser = administrator;
-            //    await applicationDbContext.Subtitles.AddAsync(subtitlesToSeed);
-            //}
+            foreach (var tagToSeed in TagSeeder.tagSeedingArray)
+            {
+                tagToSeed.CreatedBy = administrator.UserName;
+                await applicationDbContext.Tags.AddAsync(tagToSeed);
+            }
 
             await applicationDbContext.SaveChangesAsync();
         }

@@ -16,5 +16,9 @@ namespace Data.DataModels.Entities
         public string TagId { get; set; }
 
         public virtual Tag Tag { get; set; }
+
+        public string CreatedBy { get; set; }
+
+        public string ModifiedBy { get; set; }
     }
 }

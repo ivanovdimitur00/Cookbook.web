@@ -20,7 +20,7 @@ namespace Data.DataAccess.Seeding.PartialSeeders
                         Title = "Banana bread",
                         CreatedBy = IdentityConstants.AdministratorUsername,
                         ImageName = "Banana bread",
-                        CountryId = CountrySeeder.CountrySeedingArray
+                        CountryId = CountrySeeder.countrySeedingArray
                         .Single(c => c.Name == "Germany").Id,
                         Description = "Tasty banana bread. Not too sweet. Ideal for breakfast. Very filling.",
                         PreparationTime = 1,
@@ -32,7 +32,7 @@ namespace Data.DataAccess.Seeding.PartialSeeders
                         Title = "Beans stew",
                         CreatedBy = IdentityConstants.AdministratorUsername,
                         ImageName = "Beans stew",
-                        CountryId = CountrySeeder.CountrySeedingArray
+                        CountryId = CountrySeeder.countrySeedingArray
                         .Single(c => c.Name == "Bulgaria").Id,
                         Description = "Beans stew. Feeds the whole family. Favourite lunch for the Bulgarians.",
                         PreparationTime = 2,
@@ -44,7 +44,7 @@ namespace Data.DataAccess.Seeding.PartialSeeders
                         Title = "Lentils soup",
                         CreatedBy = IdentityConstants.UploaderUsername,
                         ImageName = "Lentils stew",
-                        CountryId = CountrySeeder.CountrySeedingArray
+                        CountryId = CountrySeeder.countrySeedingArray
                         .Single(c => c.Name == "Bulgaria").Id,
                         Description = "Lenitls soup. Feeds the whole family. Favourite lunch for the Bulgarians.",
                         PreparationTime = 90,
@@ -56,7 +56,7 @@ namespace Data.DataAccess.Seeding.PartialSeeders
                         Title = "Scrambled eggs",
                         CreatedBy = IdentityConstants.AdministratorUsername,
                         ImageName = "Scrambled eggs",
-                        CountryId = CountrySeeder.CountrySeedingArray
+                        CountryId = CountrySeeder.countrySeedingArray
                         .Single(c => c.Name == "Spain").Id,
                         Description = "Scrambled eggs with white cheese. For when you have little time to cook. very filling.",
                         PreparationTime = 20,

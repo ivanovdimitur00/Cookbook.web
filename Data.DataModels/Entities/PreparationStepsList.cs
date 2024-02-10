@@ -16,5 +16,9 @@ namespace Data.DataModels.Entities
         public string PreparationStepId { get; set; }
 
         public virtual PreparationStep PreparationStep { get; set; }
+
+        public string CreatedBy { get; set; }
+
+        public string ModifiedBy { get; set; }
     }
 }

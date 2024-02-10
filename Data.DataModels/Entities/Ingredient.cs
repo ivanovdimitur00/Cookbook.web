@@ -23,6 +23,10 @@ namespace Data.DataModels.Entities
         [Required]
         public bool IsAllergen { get; set; }
 
+        public string CreatedBy { get; set; }
+
+        public string ModifiedBy { get; set; }
+
         public virtual ICollection<RecipeIngredients> RecipeIngredients { get; set; }
     }
 }

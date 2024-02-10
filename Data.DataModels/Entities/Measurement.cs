@@ -24,6 +24,10 @@ namespace Data.DataModels.Entities
         [MaxLength(20)]
         public string Unit { get; set; }
 
+        public string CreatedBy { get; set; }
+
+        public string ModifiedBy { get; set; }
+
         public virtual ICollection<RecipeIngredients> RecipeIngredients { get; set; }
     }
 }
