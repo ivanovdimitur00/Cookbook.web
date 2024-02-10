@@ -1,5 +1,5 @@
-﻿//using Data.DataAccess.Repositories.Implementation;
-//using Data.DataAccess.Repositories.Interfaces;
+﻿using Data.DataAccess.Repositories.Implementation;
+using Data.DataAccess.Repositories.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Cookbook.Infrastructure.Extensions
@@ -8,22 +8,18 @@ namespace Cookbook.Infrastructure.Extensions
     {
         public static void RegisterRepositories(this IServiceCollection serviceCollection)
         {
-            //serviceCollection.AddScoped<ICountryRepository, CountryRepository>();
-            //serviceCollection.AddScoped<IGenreRepository, GenreRepository>();
-            //serviceCollection.AddScoped<ILanguageRepository, LanguageRepository>();
-            //serviceCollection.AddScoped<IActorRepository, ActorRepository>();
-            //serviceCollection.AddScoped<IFilmProductionRepository, FilmProductionRepository>();
-            //serviceCollection.AddScoped<IFilmProductionActorRepository, FilmProductionActorRepository>();
-            //serviceCollection.AddScoped<IDirectorRepository, DirectorRepository>();
-            //serviceCollection.AddScoped<IFilmProductionDirectorRepository, FilmProductionDirectorRepository>();
-            //serviceCollection.AddScoped<IScreenwriterRepository, ScreenwriterRepository>();
-            //serviceCollection.AddScoped<IFilmProductionScreenwriterRepository, FilmProductionScreenwriterRepository>();
-            //serviceCollection.AddScoped<IFilmProductionGenreRepository, FilmProductionGenreRepository>();
-            //serviceCollection.AddScoped<ISubtitlesRepository, SubtitlesRepository>();
-            //serviceCollection.AddScoped<ISubtitlesFilesRepository, SubtitlesFilesRepository>();
-            //serviceCollection.AddScoped<ICommentRepository, CommentRepository>();
-            //serviceCollection.AddScoped<IFavouritesRepository, FavouritesRepository>();
-            //serviceCollection.AddScoped<IUserRepository, UserRepository>();
+            serviceCollection.AddScoped<ICountryRepository, CountryRepository>();
+            serviceCollection.AddScoped<IIngredientRepository,IngredientRepository>();
+            serviceCollection.AddScoped<IMeasurementRepository, MeasurementRepository>();
+            serviceCollection.AddScoped<IPreparationStepRepository, PreparationStepRepository>();
+            serviceCollection.AddScoped<IPreparationStepsListRepository, PreparationStepsListRepository>();
+            serviceCollection.AddScoped<IRecipeIngredientsRepository, RecipeIngredientsRepository>();
+            serviceCollection.AddScoped<IRecipeRepository, RecipeRepository>();
+            serviceCollection.AddScoped<IRecipeTagRepository, RecipeTagRepository>();
+            serviceCollection.AddScoped<ITagRepository, TagRepository>();
+            serviceCollection.AddScoped<ICommentRepository, CommentRepository>();
+            serviceCollection.AddScoped<IFavouritesRepository, FavouritesRepository>();
+            serviceCollection.AddScoped<IUserRepository, UserRepository>();
         }
     }
 }

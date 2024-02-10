@@ -27,9 +27,4 @@
     <ProjectReference Include="..\Data.DataModels\Data.DataModels.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\Implementation\" />
-    <Folder Include="Repositories\Interfaces\" />
-  </ItemGroup>
-
 </Project>
