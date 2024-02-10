@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cookbook.Common.GlobalConstants
 {
-    internal class ValidationConstants
+    public class ValidationConstants
     {
         //related to length or size of number
 

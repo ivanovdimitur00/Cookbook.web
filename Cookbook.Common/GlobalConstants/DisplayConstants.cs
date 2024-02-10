@@ -3,6 +3,12 @@
     public class DisplayConstants
     {
         public const string FirstNameDisplayName = "First Name";
+        
+        public const string NameDisplayName = "Name";
+
+        public const string UnitDisplayName = "Unit";
+
+        public const string DescriptionDisplayName = "Description";
 
         public const string LastNameDisplayName = "Last Name";
 

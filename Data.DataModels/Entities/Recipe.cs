@@ -32,6 +32,10 @@ namespace Data.DataModels.Entities
 
         public string ModifiedBy { get; set; }
 
+        public string ApplicationUserId { get; set; }
+
+        public virtual ApplicationUser ApplicationUser { get; set; }
+
         public string? ImageName { get; set; }
 
         [NotMapped]

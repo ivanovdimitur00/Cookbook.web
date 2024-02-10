@@ -10,9 +10,9 @@
 //using SubtitlesManagementSystem.Business.Services.Screenwriters;
 //using SubtitlesManagementSystem.Business.Services.Subtitles;
 //using SubtitlesManagementSystem.Business.Services.SubtitlesCatalogue;
-//using SubtitlesManagementSystem.Business.Services.Users;
-//using SubtitlesManagementSystem.Business.Transactions.Implementation;
-//using SubtitlesManagementSystem.Business.Transactions.Interfaces;
+using Cookbook.Business.Services.Users;
+using Cookbook.Business.Transactions.Implementation;
+using Cookbook.Business.Transactions.Interfaces;
 
 namespace Cookbook.Infrastructure.Extensions
 {
@@ -20,20 +20,16 @@ namespace Cookbook.Infrastructure.Extensions
     {
         public static void RegisterServiceLayer(this IServiceCollection serviceCollection)
         {
-            //serviceCollection.AddScoped<IUnitOfWork, UnitOfWork>();
+            serviceCollection.AddScoped<IUnitOfWork, UnitOfWork>();
 
             //serviceCollection.AddTransient<ICountryService, CountryService>();
-            //serviceCollection.AddTransient<IGenreService, GenreService>();
-            //serviceCollection.AddTransient<ILanguageService, LanguageService>();
-            //serviceCollection.AddTransient<IActorService, ActorService>();
-            //serviceCollection.AddTransient<IFilmProductionService, FilmProductionService>();
-            //serviceCollection.AddTransient<IDirectorService, DirectorService>();
-            //serviceCollection.AddTransient<IScreenwriterService, ScreenwriterService>();
-            //serviceCollection.AddTransient<ISubtitlesService, SubtitlesService>();
+
+
+            
             //serviceCollection.AddTransient<ICommentService, CommentService>();
             //serviceCollection.AddTransient<IFavouritesService, FavouritesService>();
-            //serviceCollection.AddTransient<ISubtitlesCatalogueService, SubtitlesCatalogueService>();
-            //serviceCollection.AddTransient<IUserService, UserService>();
+
+            serviceCollection.AddTransient<IUserService, UserService>();
         }
     }
 }
