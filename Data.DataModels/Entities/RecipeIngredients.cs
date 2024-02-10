@@ -12,12 +12,14 @@ namespace Data.DataModels.Entities
 
         public virtual Recipe Recipe { get; set; }
 
+        public string MeasurementId { get; set; }
+
+        public virtual Measurement Measurement { get; set; }
+
         public string IngredientId { get; set; }
 
         public virtual Ingredient Ingredient { get; set; }
 
-        public string MeasurementId { get; set; }
-
-        public virtual Measurement Measurement { get; set; }
+        
     }
 }

@@ -1,12 +1,48 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Data.DataModels.Entities;
 
 namespace Data.DataAccess.Seeding.PartialSeeders
 {
-    public class CountrySeeder
+    internal static class CountrySeeder
     {
+        internal static Country[] CountrySeedingArray { get; private set; } = SeedCountries();
+
+        private static Country[] SeedCountries()
+        {
+            var countriesToSeed = new Country[]
+            {
+                new Country()
+                {
+                    Name = "USA",
+                    CreatedOn = DateTime.UtcNow
+                },
+                new Country()
+                {
+                    Name = "UK",
+                    CreatedOn = DateTime.UtcNow
+                },
+                new Country()
+                {
+                    Name = "Germany",
+                    CreatedOn = DateTime.UtcNow
+                },
+                new Country()
+                {
+                    Name = "Spain",
+                    CreatedOn = DateTime.UtcNow
+                },
+                new Country()
+                {
+                    Name = "Australia",
+                    CreatedOn = DateTime.UtcNow
+                },
+                new Country()
+                {
+                    Name = "Bulgaria",
+                    CreatedOn = DateTime.UtcNow
+                }
+            };
+
+            return countriesToSeed;
+        }
     }
 }
