@@ -96,13 +96,19 @@ namespace Cookbook.web.Areas.Identity.Pages.Account
             }
 
             var userByEmail = await _userManager.FindByEmailAsync(ResetPasswordBinding.Email);
+
             if (userByEmail == null)
             {
                 // Don't reveal that the user does not exist
                 return RedirectToPage("./ResetPasswordConfirmation");
             }
 
-            var reserPasswordResult = await _userManager.ResetPasswordAsync(userByEmail, ResetPasswordBinding.Code, ResetPasswordBinding.Password);
+            var reserPasswordResult = await _userManager.ResetPasswordAsync(
+                userByEmail, 
+                ResetPasswordBinding.Code, 
+                ResetPasswordBinding.Password
+                );
+
             if (reserPasswordResult.Succeeded)
             {
                 return RedirectToPage("./ResetPasswordConfirmation");

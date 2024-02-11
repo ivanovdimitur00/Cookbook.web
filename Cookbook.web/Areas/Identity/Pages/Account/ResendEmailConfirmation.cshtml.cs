@@ -21,6 +21,7 @@ namespace Cookbook.web.Areas.Identity.Pages.Account
     public class ResendEmailConfirmationModel : PageModel
     {
         private readonly UserManager<ApplicationUser> _userManager;
+
         private readonly IEmailSender _emailSender;
 
         public ResendEmailConfirmationModel(UserManager<ApplicationUser> userManager, IEmailSender emailSender)
@@ -63,6 +64,7 @@ namespace Cookbook.web.Areas.Identity.Pages.Account
             }
 
             var userByEmail = await _userManager.FindByEmailAsync(ResendEmailConfirmationBinding.Email);
+
             if (userByEmail == null)
             {
                 ModelState.AddModelError(string.Empty, "Verification email sent. Please check your email.");
@@ -71,12 +73,16 @@ namespace Cookbook.web.Areas.Identity.Pages.Account
 
             var userId = await _userManager.GetUserIdAsync(userByEmail);
             var code = await _userManager.GenerateEmailConfirmationTokenAsync(userByEmail);
+
             code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+
             var callbackUrl = Url.Page(
                 "/Account/ConfirmEmail",
                 pageHandler: null,
                 values: new { userId, code },
-                protocol: Request.Scheme);
+                protocol: Request.Scheme
+                );
+
             await _emailSender.SendEmailAsync(
                 ResendEmailConfirmationBinding.Email,
                 "Confirm your email",
