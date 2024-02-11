@@ -13,11 +13,11 @@ namespace Cookbook.Business.Services.PreparationSteps
 
         PreparationStepDetailsViewModel GetPreparationStepDetails(string preparationStepId);
 
-        bool CreatePreparationStep(CreatePreparationStepsBindingModel createPreparationStepBindingModel, string[] selectedRecipes, string currentUserName);
+        bool CreatePreparationStep(CreatePreparationStepsBindingModel createPreparationStepBindingModel, string[] selectedPreparationStepsList, string currentUserName);
 
         EditPreparationStepsBindingModel GetPreparationStepEditingDetails(string preparationStepId);
 
-        bool EditPreparationStep(EditPreparationStepsBindingModel editPreparationStepBindingModel, string[] selectedRecipes, string currentUserName);
+        bool EditPreparationStep(EditPreparationStepsBindingModel editPreparationStepBindingModel, string[] selectedPreparationStepsList, string currentUserName);
 
         DeletePreparationStepViewModel GetPreparationStepDeletionDetails(string preparationStepId);
 

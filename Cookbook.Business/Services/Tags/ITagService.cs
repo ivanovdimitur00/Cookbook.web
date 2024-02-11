@@ -13,11 +13,11 @@ namespace Cookbook.Business.Services.Tags
 
         TagDetailsViewModel GetTagDetails(string tagId);
 
-        bool CreateTag(CreateTagBindingModel createTagBindingModel, string[] selectedRecipes, string currentUserName);
+        bool CreateTag(CreateTagBindingModel createTagBindingModel, string[] selectedRecipeTags, string currentUserName);
 
         EditTagBindingModel GetTagEditingDetails(string tagId);
 
-        bool EditTag(EditTagBindingModel editTagBindingModel, string[] selectedRecipes, string currentUserName);
+        bool EditTag(EditTagBindingModel editTagBindingModel, string[] selectedRecipeTags, string currentUserName);
 
         DeleteTagViewModel GetTagDeletionDetails(string tagId);
 

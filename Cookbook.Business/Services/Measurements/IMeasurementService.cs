@@ -13,11 +13,11 @@ namespace Cookbook.Business.Services.Measurements
 
         MeasurementDetailsViewModel GetMeasurementDetails(string measurementId);
 
-        bool CreateMeasurement(CreateMeasurementBindingModel createMeasurementBindingModel, string[] selectedRecipes, string currentUserName);
+        bool CreateMeasurement(CreateMeasurementBindingModel createMeasurementBindingModel, string[] selectedRecipeIngredients, string currentUserName);
 
         EditMeasurementBindingModel GetMeasurementEditingDetails(string measurementId);
 
-        bool EditMeasurement(EditMeasurementBindingModel editMeasurementBindingModel, string[] selectedRecipes, string currentUserName);
+        bool EditMeasurement(EditMeasurementBindingModel editMeasurementBindingModel, string[] selectedRecipeIngredients, string currentUserName);
 
         DeleteMeasurementViewModel GetMeasurementDeletionDetails(string measurementId);
 

@@ -11,13 +11,13 @@ namespace Cookbook.Business.Services.Ingredients
 
         CreateIngredientBindingModel GetIngredientCreatingDetails();
 
-        IngredientDetailsViewModel GetDirectorDetails(string ingredientId);
+        IngredientDetailsViewModel GetIngredientDetails(string ingredientId);
 
-        bool CreateIngredient(CreateIngredientBindingModel createIngredientBindingModel, string[] selectedRecipes, string currentUserName);
+        bool CreateIngredient(CreateIngredientBindingModel createIngredientBindingModel, string[] selectedRecipeIngredients, string currentUserName);
 
         EditIngredientBindingModel GetIngredientEditingDetails(string ingredientId);
 
-        bool EditIngredient(EditIngredientBindingModel editIngredientBindingModel, string[] selectedRecipes, string currentUserName);
+        bool EditIngredient(EditIngredientBindingModel editIngredientBindingModel, string[] selectedRecipeIngredients, string currentUserName);
 
         DeleteIngredientViewModel GetIngredientDeletionDetails(string ingredientId);
 

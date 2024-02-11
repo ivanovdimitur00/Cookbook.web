@@ -1,18 +1,15 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-//using SubtitlesManagementSystem.Business.Services.Actors;
-//using SubtitlesManagementSystem.Business.Services.Comments;
-//using SubtitlesManagementSystem.Business.Services.Countries;
-//using SubtitlesManagementSystem.Business.Services.Directors;
-//using SubtitlesManagementSystem.Business.Services.Favourites;
-//using SubtitlesManagementSystem.Business.Services.FilmProductions;
-//using SubtitlesManagementSystem.Business.Services.Genres;
-//using SubtitlesManagementSystem.Business.Services.Languages;
-//using SubtitlesManagementSystem.Business.Services.Screenwriters;
-//using SubtitlesManagementSystem.Business.Services.Subtitles;
-//using SubtitlesManagementSystem.Business.Services.SubtitlesCatalogue;
+using Cookbook.Business.Services.Ingredients;
+using Cookbook.Business.Services.Comments;
+using Cookbook.Business.Services.Countries;
+using Cookbook.Business.Services.Favourites;
+using Cookbook.Business.Services.PreparationSteps;
+using Cookbook.Business.Services.Recipes;
+using Cookbook.Business.Services.Tags;
 using Cookbook.Business.Services.Users;
 using Cookbook.Business.Transactions.Implementation;
 using Cookbook.Business.Transactions.Interfaces;
+using Cookbook.Business.Services.Measurements;
 
 namespace Cookbook.Infrastructure.Extensions
 {
@@ -21,14 +18,14 @@ namespace Cookbook.Infrastructure.Extensions
         public static void RegisterServiceLayer(this IServiceCollection serviceCollection)
         {
             serviceCollection.AddScoped<IUnitOfWork, UnitOfWork>();
-
-            //serviceCollection.AddTransient<ICountryService, CountryService>();
-
-
-            
-            //serviceCollection.AddTransient<ICommentService, CommentService>();
-            //serviceCollection.AddTransient<IFavouritesService, FavouritesService>();
-
+            serviceCollection.AddTransient<IIngredientService, IngredientService>();
+            serviceCollection.AddTransient<IMeasurementService, MeasurementService>();
+            serviceCollection.AddTransient<IPreparationStepService, PreparationStepService>();
+            serviceCollection.AddTransient<ICountryService, CountryService>();
+            serviceCollection.AddTransient<IRecipeService, RecipeService>();
+            serviceCollection.AddTransient<ITagService, TagService>();
+            serviceCollection.AddTransient<ICommentService, CommentService>();
+            serviceCollection.AddTransient<IFavouritesService, FavouritesService>();
             serviceCollection.AddTransient<IUserService, UserService>();
         }
     }
