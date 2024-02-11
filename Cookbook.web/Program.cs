@@ -1,21 +1,28 @@
-using Cookbook.Infrastructure.Extensions;
 using Data.DataAccess;
 using Data.DataModels.Entities.Identity;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+using Cookbook.Infrastructure.Extensions;
+using Microsoft.AspNetCore.Localization;
+using System.Globalization;
 
 var webApplicationBuilder = WebApplication.CreateBuilder(args);
-var connectionString = webApplicationBuilder.Configuration.GetConnectionString("ApplicationDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ApplicationDbContextConnection' not found.");
+//var connectionString = webApplicationBuilder.Configuration.GetConnectionString("ApplicationDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ApplicationDbContextConnection' not found.");
 
 // Add services to the container.
 webApplicationBuilder.Services.AddDbContext<ApplicationDbContext>();
 webApplicationBuilder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-webApplicationBuilder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+webApplicationBuilder.Services
+    .AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddRoles<ApplicationRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 webApplicationBuilder.Services.AddControllersWithViews();
+
+webApplicationBuilder.Services.AddRazorPages();
+
+webApplicationBuilder.Services.RegisterRepositories();
+
+webApplicationBuilder.Services.RegisterServiceLayer();
 
 var webApplication = webApplicationBuilder.Build();
 
@@ -40,6 +47,19 @@ else
 }
 
 webApplication.UseHttpsRedirection();
+
+var supportedCultures = new[]
+{
+   new CultureInfo("en-US")
+};
+
+webApplication.UseRequestLocalization(new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture("en-US"),
+    SupportedCultures = supportedCultures,
+    SupportedUICultures = supportedCultures
+});
+
 webApplication.UseStaticFiles();
 
 webApplication.UseRouting();
@@ -53,3 +73,8 @@ webApplication.MapControllerRoute(
 webApplication.MapRazorPages();
 
 webApplication.Run();
+
+public partial class Program
+{
+
+}

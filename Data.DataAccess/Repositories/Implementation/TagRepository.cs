@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace Data.DataAccess.Repositories.Implementation
 {
-    public abstract class TagRepository : BaseRepository<Tag>, ITagRepository
+    public  class TagRepository : BaseRepository<Tag>, ITagRepository
     {
         public TagRepository(ApplicationDbContext applicationDbContext)
             : base(applicationDbContext)

@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace Data.DataAccess.Repositories.Implementation
 {
-    public abstract class IngredientRepository
+    public  class IngredientRepository
         : BaseRepository<Ingredient>, IIngredientRepository
     {
         public IngredientRepository(ApplicationDbContext applicationDbContext)

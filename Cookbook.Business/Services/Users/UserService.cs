@@ -1,8 +1,8 @@
-﻿using Cookbook.Web.Models.Users;
-using Data.DataAccess.Repositories.Interfaces;
+﻿using Data.DataAccess.Repositories.Interfaces;
 using Data.DataModels.Entities.Identity;
 using Data.DataModels.Enums;
 using Microsoft.AspNetCore.Identity;
+using Cookbook.Web.Models.Users;
 using System.Diagnostics;
 using static Cookbook.Common.GlobalConstants.IdentityConstants;
 

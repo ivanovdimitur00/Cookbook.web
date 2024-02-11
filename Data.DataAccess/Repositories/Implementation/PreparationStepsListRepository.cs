@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace Data.DataAccess.Repositories.Implementation
 {
-    public abstract class PreparationStepsListRepository : BaseRepository<PreparationStepsList>, IPreparationStepsListRepository
+    public  class PreparationStepsListRepository : BaseRepository<PreparationStepsList>, IPreparationStepsListRepository
     {
         public PreparationStepsListRepository(ApplicationDbContext applicationDbContext)
             : base(applicationDbContext)

@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace Data.DataAccess.Repositories.Implementation
 {
-    public abstract class MeasurementRepository : BaseRepository<Measurement>, IMeasurementRepository
+    public  class MeasurementRepository : BaseRepository<Measurement>, IMeasurementRepository
     {
         public MeasurementRepository(ApplicationDbContext applicationDbContext)
             : base(applicationDbContext)
