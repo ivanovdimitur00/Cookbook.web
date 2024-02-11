@@ -2,7 +2,7 @@
 
 namespace Cookbook.Web.Models.Recipes.ViewModels
 {
-    public class DeleteSubtitlesViewModel
+    public class DeleteRecipesViewModel
     {
         public string Title { get; set; }
 

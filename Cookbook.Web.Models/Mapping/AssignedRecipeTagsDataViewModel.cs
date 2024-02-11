@@ -6,13 +6,7 @@ namespace Cookbook.Web.Models.Mapping
     {
         public string RecipeTagId { get; set; }
 
-        public string RecipeId { get; set; }
-
-        public virtual Recipe Recipe { get; set; }
-
-        public string TagId { get; set; }
-
-        public virtual Tag Tag { get; set; }
+        public string Name { get; set; }
 
         public bool IsAssigned { get; set; }
     }

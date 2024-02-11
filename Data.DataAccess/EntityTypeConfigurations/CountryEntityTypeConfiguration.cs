@@ -10,7 +10,7 @@ namespace Data.DataAccess.EntityTypeConfigurations
         {
             entityTypeBuilder
                .HasMany(c => c.Recipes)
-               .WithOne(fp => fp.Country)
+               .WithOne(r => r.Country)
                .OnDelete(DeleteBehavior.Restrict);
         }
     }

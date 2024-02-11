@@ -11,7 +11,7 @@ namespace Data.DataAccess.EntityTypeConfigurations
             //is this correct?
             entityTypeBuilder
                .HasMany(l => l.PreparationStepsList)
-               .WithOne(fp => fp.PreparationStep)
+               .WithOne(r => r.PreparationStep)
                .OnDelete(DeleteBehavior.Cascade); 
         }
     }

@@ -5,7 +5,7 @@ using System.ComponentModel;
 
 namespace Cookbook.Web.Models.PreparationSteps.BindingModels
 {
-    public class CreatePreprationStepsBindingModel
+    public class CreatePreparationStepsBindingModel
     {
         [Required]
         [Range(1, 24, ErrorMessage = ValidationConstants.PreparationStepNumberRangeValidationMessage)]

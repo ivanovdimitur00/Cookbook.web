@@ -1,4 +1,6 @@
-﻿using Cookbook.Web.Models.Recipes.ViewModels;
+﻿using Cookbook.Web.Models.Countries.ViewModels;
+using Cookbook.Web.Models.Recipes.ViewModels;
+using System.ComponentModel;
 
 namespace Cookbook.Web.Models.Recipes.ViewModels
 {
@@ -8,6 +10,7 @@ namespace Cookbook.Web.Models.Recipes.ViewModels
 
         public string Title { get; set; }
 
-        public RecipeConciseInformationViewModel RelatedRecipes { get; set; }
+        [DisplayName("Country")]
+        public CountryConciseInformationViewModel RelatedCountry { get; set; }
     }
 }

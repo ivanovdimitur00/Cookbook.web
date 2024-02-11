@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Cookbook.Web.Models.Measurements.ViewModels
 {
-    public class DeleteMeasurementsViewModel
+    public class DeleteMeasurementViewModel
     {
         public int Quantity { get; set; }
 

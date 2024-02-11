@@ -1,4 +1,5 @@
 ﻿using Data.DataModels.Entities;
+using System.ComponentModel.DataAnnotations;
 
 namespace Cookbook.Web.Models.Mapping
 {
@@ -6,17 +7,13 @@ namespace Cookbook.Web.Models.Mapping
     {
         public string RecipeIngredientId { get; set; }
 
-        public string RecipeId { get; set; }
+        public string Name { get; set; }
 
-        public virtual Recipe Recipe { get; set; }
+        public bool IsAllergen { get; set; }
 
-        public string MeasurementId { get; set; }
+        public int Quantity { get; set; }
 
-        public virtual Measurement Measurement { get; set; }
-
-        public string IngredientId { get; set; }
-
-        public virtual Ingredient Ingredient { get; set; }
+        public string Unit { get; set; }
 
         public bool IsAssigned { get; set; }
     }

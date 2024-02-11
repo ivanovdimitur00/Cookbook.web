@@ -30,9 +30,9 @@ namespace Cookbook.Business.Services.Countries
                         Id = c.Id,
                         Name = c.Name,
                         RelatedRecipes = c.Recipes
-                            .Select(fp => new RecipeConciseInformationViewModel
+                            .Select(r => new RecipeConciseInformationViewModel
                             {
-                                Title = fp.Title
+                                Title = r.Title
                             })
                     })
                     .ToList();
@@ -60,11 +60,11 @@ namespace Cookbook.Business.Services.Countries
                 ModifiedOn = singleCountry.ModifiedOn,
                 ModifiedBy = singleCountry.ModifiedBy,
                 RelatedRecipes = singleCountry.Recipes
-                    .Select(fp => new RecipeDetailedInformationViewModel
+                    .Select(r => new RecipeDetailedInformationViewModel
                     {
-                        Title = fp.Title,
-                        Servings = fp.Servings,
-                        CreatedOn = fp.CreatedOn
+                        Title = r.Title,
+                        Servings = r.Servings,
+                        CreatedOn = r.CreatedOn
                     })
             };
 

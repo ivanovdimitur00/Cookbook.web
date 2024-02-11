@@ -16,7 +16,7 @@ namespace Data.DataAccess.EntityTypeConfigurations
             //is this correct?
             entityTypeBuilder
                .HasMany(l => l.RecipeTags)
-               .WithOne(fp => fp.Tag)
+               .WithOne(r => r.Tag)
                .OnDelete(DeleteBehavior.NoAction);
         }
     }
