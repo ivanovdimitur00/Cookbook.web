@@ -13,17 +13,22 @@
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-floating">
-                <input asp-for="RegisterBinding.Email" class="form-control" autocomplete="username" aria-required="true" />
+                <input asp-for="RegisterBinding.Username" class="form-control" placeholder="User Name" autocomplete="username" aria-required="true" />
+                <label asp-for="RegisterBinding.Username"></label>
+                <span asp-validation-for="RegisterBinding.Email" class="text-danger"></span>
+            </div>
+            <div class="form-floating"> 
+                <input asp-for="RegisterBinding.Email" class="form-control" placeholder="Email" autocomplete="email" aria-required="true" />
                 <label asp-for="RegisterBinding.Email"></label>
                 <span asp-validation-for="RegisterBinding.Email" class="text-danger"></span>
             </div>
             <div class="form-floating">
-                <input asp-for="RegisterBinding.Password" class="form-control" autocomplete="new-password" aria-required="true" />
+                <input asp-for="RegisterBinding.Password" class="form-control" placeholder="Password" autocomplete="new-password" aria-required="true" />
                 <label asp-for="RegisterBinding.Password"></label>
                 <span asp-validation-for="RegisterBinding.Password" class="text-danger"></span>
             </div>
             <div class="form-floating">
-                <input asp-for="RegisterBinding.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />
+                <input asp-for="RegisterBinding.ConfirmPassword" class="form-control" placeholder="Confirm Password" autocomplete="new-password" aria-required="true" />
                 <label asp-for="RegisterBinding.ConfirmPassword"></label>
                 <span asp-validation-for="RegisterBinding.ConfirmPassword" class="text-danger"></span>
             </div>
