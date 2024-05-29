@@ -49,8 +49,32 @@ The intended audiences for the project are the teacher and assistant in my C# cl
 <br/>
 
 ## Structutre
-* Describe how the project files are arranged and what they mean;
-  * Use bullet points and short sentences;
+Here are some of the important directories and files you need to know about this project:
+* `Cookbook.web` - The main project folder;
+  * `Cookbook.web/Areas/Identity/Pages`- contains all user related frontend and program files;
+  * `Cookbook.web/Controllers` - This is the folder with the object controllers;
+  * `Cookbook.web/Properties/LaunchSettings.json`;
+  * `Cookbook.web/Views` - Containg views for the objects;
+  * `Cookbook.web/wwwroot` - Contains files for the frontend;
+  * `Cookbook.web/appsettings.json`- Used to configure communication with the database;
+  * `Cookbook.web/program.cs`- Used to configure the startup of the program;
+* `Cookbook.Web.Models` - Contains all binding models and view models for the objects. Also contains relationship mapping in `Mapping` subfolder;
+* `Cookbook.Infrastructure` - Contains files, related to seeding via the ApplicationDBContext, Database migration management, Repository configuration and Services configuration;
+* `Cookbook.Common` - Contains global constant files for error checking and exception handling and helper functions for pagination;
+* `Cookbook.Business` - Contains files for the implementation of the unit of work pattern in `Transactions` and the Services for objects;
+* `Data.DataAccess`
+  * `Data.DataAccess/EntityTypeConfigurations` - Object entity configuration files;
+  * `Data.DataAccess/Migrations` - Contains database migrations;
+  * `Data.DataAccess/Repositories` - Contains the repository files and interfaces for the objects;
+  * `Data.DataAccess/Seeding` - Contains the files for seeding data upon program startup;
+    * `Data.DataAccess/PartialSeeders` - Contains files for seeding objects;
+  * `Data.DataAccess/ApplicationDBContext`- The file, responsible for configuring the ApplicationDBContext;
+* `Data.DataModels`
+  * `Data.DataModels/Abstraction` - Contains the base entity model;
+  * `Data.DataModels/Entities` - Folder containing all entity files;
+    * `Data.DataModels/Entities/Identity` - Contains the user identity files;
+  * `Data.DataModels/Enums` - Contains the file for the user promotion states;
+  * `Data.DataModels/Interfaces` - contains the interface for the base entity and `IAuditInfo.cs`.
 <br/>
 
 ## Installation instructions
