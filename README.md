@@ -31,6 +31,11 @@ The intended audiences for the project are the teacher and assistant in my C# cl
 <br/>
 <br/>
 
+## Project requirements
+The requirements for the project can be viewed in [this file](PROJECT_REQUIREMENTS.pdf)
+<br/>
+<br/>
+
 ## Key features and functionalities
 * ### KEY FEATURES
    * Users can browse recipes without an account but can't post recipes;
@@ -145,6 +150,7 @@ We assume that the project has been accessed on the internet or has been run on 
 
 ## API references
 Nothing to mention here.
+<br/>
 <br/>
 
 ## Bugs
