@@ -6,15 +6,17 @@ A C# .NET Core web project. It allows users to register and login, post recipes 
 ## Table of contents
 0. [Project status](#Project-status)
 1. [Description](#Description)
-2. [Key features and functionalities](#Key-features-and-functionalities)
-3. [Structure](#Structure)
-4. [Installation instructions](#Installation-instructions)
-5. [Dependencies](#Dependencies)
-6. [System requirements](#System-requirements)
-7. [Usage examples](#Usage-examples)
-8. [API references](#API-references)
-9. [Bugs](#Bugs)
-10. [Future improvements](#Futute-improvements)
+2. [Project requirements](#Project-requirements)
+3. [Key features and functionalities](#Key-features-and-functionalities)
+4. [Structure](#Structure)
+5. [Installation instructions](#Installation-instructions)
+6. [Dependencies](#Dependencies)
+7. [System requirements](#System-requirements)
+8. [Usage examples](#Usage-examples)
+9. [API references](#API-references)
+10. [Bugs](#Bugs)
+11. [Future improvements](#Futute-improvements)
+12. [Used resources](#Used-resources)
 <br/>
 
 ## Project status
@@ -132,7 +134,7 @@ This is a list of dependencies that you need if you want to run the project loca
 <br>
 
 ## API references
-* If the project is used as a standalone library, describe the functions that can be called;
+Nothing to mention here
 <br/>
 
 ## Bugs
@@ -143,53 +145,16 @@ This is a list of dependencies that you need if you want to run the project loca
 - [ ] describe some ideas you would want to implement into your project;
 <br>
 
-## REQUIREMENTS
-<ol>
-   <li> Must be hosted on a VCS. Like GitHub, for example. </li>
-   <ol>
-      <li> Have at least 10 commits over 3 days </li>
-   </ol>
-</ol>
+* problems with the user register and login
+* Seeded data does not appear
+* did search and filter ever work?
+* no pagination
+* no frontend - use bootstrap template (themewagon.com)
+* Unit testing
+* Integration testing
+* Database model is quite messy. needs cleaning up and more understanding of how to implement it
 
-1. Implement ASP .NET Core Framework; <br>
-   1.1. At least 10 views; <br>
-   1.2. At least 5 independent entities with relations of type one-to-one / one-to-many / many to many; <br>
-   1.3. At least 5 controllers; <br>
-   1.4. At least full C.R.U.D. functionality for 3 entities.
-2. Use Visual Studio Community 2022; <br>
-3. Use Microsoft SQL server; <br>
-4. Use Entity Framework Core for DB access; <br>
-5. Use the standard ASP .NET Identity System to control users and roles; <br>
-   5.1. At least 2 users - one with "NormalUser" role and the other with "Administrator" role. <br>
-6. have error handling and data validation to avoid crashes. <br>
-<br>
-
-## RECOMMENDATIONS
-1. Use the S.O.L.I.D. principles; <br>
-2. have strong cohesion and loose coupling; <br>
-3. Use naming conventions appropriate for C#; <br>
-4. practice clean code; <br>
-<br>
-
-## EXTRAS
-1. Seeding the DB with sample data; <br>
-2. Use the repository-service pattern; <br>
-3. Filtering information in the form of pagination, sorting and/or filtering by criteria; <br>
-4. Logic separation in MVC Areas and partial views; <br>
-5. others:
-<ul>
-   <ul>
-      <li>Implement a bootstrap template;
-      </li>
-      <li>Do Unit testing;
-      </li>
-      <li>Do Integration testing;
-      </li>
-   </ul>
-</ul>
-<br>
-
-## USED RESOURCES
+## Used resources
 <ul>
    <li>[GitHub markdown guide - basic syntax](https://github.com/mattcone/markdown-guide/blob/master/_basic-syntax/links.md)
    </li>
