@@ -1,7 +1,90 @@
-
 # Cookbook
+A C# .NET Core web project. It allows users to register and login, post recipes of their favourite dish and leave comments. 
+<br/>
+<br/>
 
-### a C# .NET Core web project. It's about user created recipes in an online platform.
+## Table of contents
+0. [Project status](#Project-status)
+1. [Description](#Description)
+2. [Key features and functionalities](#Key-features-and-functionalities)
+3. [Structure](#Structure)
+4. [Installation instructions](#Installation-instructions)
+5. [Dependencies](#Dependencies)
+6. [System requirements](#System-requirements)
+7. [Usage examples](#Usage-examples)
+8. [API references](#API-references)
+9. [Bugs](#Bugs)
+10. [Future improvements](#Futute-improvements)
+<br/>
+
+## Project status
+Completed and partially working. Not expecting changes.
+<br/>
+<br/>
+
+## Description
+The purpose and goal of the project is to create an MVC project with the application of some design patterns using C# and .NET . 
+
+The intended audiences for the project are the teacher and assistant in my C# class and myself.
+<br/>
+<br/>
+
+## Key features and functionalities
+* ### KEY FEATURES
+   * Users can browse recipes without an account but can't post recipes;
+   * Users can register an account;
+   * Users can login with a registered account;
+   * Logged users can upload recipes;
+   * Users can search recipes using the search and also apply filters;
+   * User promotions (level of access). 
+
+* ### FUNCTIONALITIES
+   * Login and register system, provided by microsoft;
+   * Custom user;
+   * SQL Database model;
+   * Search, Filtering, Pagination;
+   * Comments;
+   * Exception error handling;
+   * DB mocking pattern and Seeded data;
+<br/>
+
+## Structutre
+* Describe how the project files are arranged and what they mean;
+  * Use bullet points and short sentences;
+<br/>
+
+## Installation instructions
+1. How to access and/or setup the project;
+2. Use a numbered list;
+<br/>
+
+## Dependencies
+* Dependency 1;
+* Dependency 2;
+<br/>
+
+## System requirements
+| System requirements |
+| ------------------- | 
+| requirement 1       | 
+| requirement 2       | 
+<br/>
+
+## Usage examples
+1. Make a tutorial on how the project can be used;
+2. Use numbered lists;
+<br>
+
+## API references
+* If the project is used as a standalone library, describe the functions that can be called;
+<br/>
+
+## Bugs
+- [ ] describe any occuring bugs that need to be fixed;
+<br/>
+
+## Future improvements
+- [ ] describe some ideas you would want to implement into your project;
 <br>
 
 ## REQUIREMENTS
