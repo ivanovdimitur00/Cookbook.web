@@ -78,20 +78,52 @@ Here are some of the important directories and files you need to know about this
 <br/>
 
 ## Installation instructions
-1. How to access and/or setup the project;
-2. Use a numbered list;
+Usually, the project is supposed to be hosted on a server and given a domain. However, I don't have a HomeLab or am I able to rent a server or a domain. Instead:
+1. Download this project;
+2. Open the Project in Visual Studio 2022;
+3. Open Miscrosoft SQL Server 2022;
+4. Ensure you have all the needed dependencies;
+5. Ensure you are connecting to your local database;
+6. Build the project. You should have access now.
 <br/>
 
 ## Dependencies
-* Dependency 1;
-* Dependency 2;
+This is a list of dependencies that you need if you want to run the project locally. Aside from **an internet connection**, you will need:
+* Visual Studio 2022;
+* Microsoft SQL Server 2022;
+* Microsoft .NET framework 6.X;
+* NuGet packages:
+  * `Data.DataModels`:
+    * "Microsoft.AspNetCore.Http.Features" Version="5.0.17";
+    * "Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.14";
+  * `Data.DataAccess`:
+    * "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.14";
+    * "Microsoft.EntityFrameworkCore.Design" Version="6.0.23";
+    * "Microsoft.EntityFrameworkCore.Proxies" Version="6.0.23";
+    * "Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.23";
+    * "Microsoft.EntityFrameworkCore.Tools" Version="6.0.23";
+    * "Microsoft.Extensions.Configuration.Json" Version="6.0.0";
+    * "Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.0";
+  * `Cookbook.Web.Models`:
+    * "Microsoft.AspNetCore.Http.Features" Version="5.0.17"
+  * `Cookbook.web`:
+    * "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.14"
+    * "Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.26"
+    * "Microsoft.AspNetCore.Identity.UI" Version="6.0.26"
+    * "Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.23"
+    * "Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.26"
+    * "Microsoft.EntityFrameworkCore.Tools" Version="6.0.26"
+    * "Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16"
+  * `Cookbook.Infrastructure`:
+    * "Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0"
+  * `Cookbook.Business`:
+    * "Microsoft.AspNetCore.Hosting" Version="2.2.7"
 <br/>
 
 ## System requirements
-| System requirements |
-| ------------------- | 
-| requirement 1       | 
-| requirement 2       | 
+| System requirements  |
+| -------------------- | 
+| Microsoft Windows 10 | 
 <br/>
 
 ## Usage examples
