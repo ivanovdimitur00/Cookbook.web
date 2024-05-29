@@ -32,7 +32,7 @@ The intended audiences for the project are the teacher and assistant in my C# cl
 <br/>
 
 ## Project requirements
-The requirements for the project can be viewed in [this file](PROJECT_REQUIREMENTS.pdf)
+The requirements for the project can be viewed in [this file](PROJECT_REQUIREMENTS.pdf).
 <br/>
 <br/>
 
@@ -52,7 +52,7 @@ The requirements for the project can be viewed in [this file](PROJECT_REQUIREMEN
    * Search, Filtering, Pagination;
    * Comments;
    * Exception error handling;
-   * DB mocking pattern and Seeded data;
+   * DB mocking pattern and Seeded data.
 <br/>
 
 ## Structutre
@@ -64,22 +64,22 @@ Here are some of the important directories and files you need to know about this
   * `Cookbook.web/Views` - Containg views for the objects;
   * `Cookbook.web/wwwroot` - Contains files for the frontend;
   * `Cookbook.web/appsettings.json`- Used to configure communication with the database;
-  * `Cookbook.web/program.cs`- Used to configure the startup of the program;
+  * `Cookbook.web/program.cs`- Used to configure the startup of the program.
 * `Cookbook.Web.Models` - Contains all binding models and view models for the objects. Also contains relationship mapping in `Mapping` subfolder;
 * `Cookbook.Infrastructure` - Contains files, related to seeding via the ApplicationDBContext, Database migration management, Repository configuration and Services configuration;
 * `Cookbook.Common` - Contains global constant files for error checking and exception handling and helper functions for pagination;
 * `Cookbook.Business` - Contains files for the implementation of the unit of work pattern in `Transactions` and the Services for objects;
-* `Data.DataAccess`
+* `Data.DataAccess`:
   * `Data.DataAccess/EntityTypeConfigurations` - Object entity configuration files;
   * `Data.DataAccess/Migrations` - Contains database migrations;
   * `Data.DataAccess/Repositories` - Contains the repository files and interfaces for the objects;
-  * `Data.DataAccess/Seeding` - Contains the files for seeding data upon program startup;
-    * `Data.DataAccess/PartialSeeders` - Contains files for seeding objects;
+  * `Data.DataAccess/Seeding` - Contains the files for seeding data upon program startup.:
+    * `Data.DataAccess/PartialSeeders` - Contains files for seeding objects.
   * `Data.DataAccess/ApplicationDBContext`- The file, responsible for configuring the ApplicationDBContext;
-* `Data.DataModels`
+* `Data.DataModels`:
   * `Data.DataModels/Abstraction` - Contains the base entity model;
-  * `Data.DataModels/Entities` - Folder containing all entity files;
-    * `Data.DataModels/Entities/Identity` - Contains the user identity files;
+  * `Data.DataModels/Entities` - Folder containing all entity files.:
+    * `Data.DataModels/Entities/Identity` - Contains the user identity files.
   * `Data.DataModels/Enums` - Contains the file for the user promotion states;
   * `Data.DataModels/Interfaces` - contains the interface for the base entity and `IAuditInfo.cs`.
 <br/>
@@ -102,7 +102,7 @@ This is a list of dependencies that you need if you want to run the project loca
 * NuGet packages:
   * `Data.DataModels`:
     * "Microsoft.AspNetCore.Http.Features" Version="5.0.17";
-    * "Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.14";
+    * "Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.14".
   * `Data.DataAccess`:
     * "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.14";
     * "Microsoft.EntityFrameworkCore.Design" Version="6.0.23";
@@ -110,24 +110,25 @@ This is a list of dependencies that you need if you want to run the project loca
     * "Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.23";
     * "Microsoft.EntityFrameworkCore.Tools" Version="6.0.23";
     * "Microsoft.Extensions.Configuration.Json" Version="6.0.0";
-    * "Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.0";
+    * "Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.0".
   * `Cookbook.Web.Models`:
-    * "Microsoft.AspNetCore.Http.Features" Version="5.0.17"
+    * "Microsoft.AspNetCore.Http.Features" Version="5.0.17";
   * `Cookbook.web`:
-    * "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.14"
-    * "Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.26"
-    * "Microsoft.AspNetCore.Identity.UI" Version="6.0.26"
-    * "Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.23"
-    * "Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.26"
-    * "Microsoft.EntityFrameworkCore.Tools" Version="6.0.26"
-    * "Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16"
+    * "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.14";
+    * "Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.26";
+    * "Microsoft.AspNetCore.Identity.UI" Version="6.0.26";
+    * "Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.23";
+    * "Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.26";
+    * "Microsoft.EntityFrameworkCore.Tools" Version="6.0.26";
+    * "Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16".
   * `Cookbook.Infrastructure`:
-    * "Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0"
+    * "Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0".
   * `Cookbook.Business`:
-    * "Microsoft.AspNetCore.Hosting" Version="2.2.7"
+    * "Microsoft.AspNetCore.Hosting" Version="2.2.7".
 <br/>
 
 ## System requirements
+The project has been developed for the Miscrosoft Windows operating system.
 | System requirements  |
 | -------------------- | 
 | Microsoft Windows 10 | 
@@ -139,12 +140,12 @@ We assume that the project has been accessed on the internet or has been run on 
 
 1. For unregistered users:
   * They can look at recipes and search for them, but not edit;
-  * They can register and/or login;
+  * They can register and/or login.
 2. For logged-in users:
   * They can create their own recipes;
   * They can leave comments on recipes;
   * They can ask for a promotion;
-  * They can search for recipes;
+  * They can search for recipes.
 3. For Administrators:
 <br>
 
@@ -171,16 +172,10 @@ Nothing to mention here.
 <br>
 
 ## Used resources
-<ul>
-   <li>[GitHub markdown guide - basic syntax](https://github.com/mattcone/markdown-guide/blob/master/_basic-syntax/links.md)
-   </li>
-   <li>[how to use git with visual studio 2022](https://learn.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2022)
-   </li>
-   <li>[Designing a Relational Database for a Cookbook](https://dev.to/amckean12/designing-a-relational-database-for-a-cookbook-4nj6)
-   </li>
-   <li>[Recipes Database](https://github.com/gadsone/sql6)
-   </li>
-   <li>[Many-to-Many relationsships](https://www.entityframeworktutorial.net/efcore/configure-many-to-many-relationship-in-ef-core.aspx)</li>
-   <li>[One-to-Many relationsships](https://www.entityframeworktutorial.net/code-first/configure-one-to-many-relationship-in-code-first.aspx)</li>
-   <li>[One-to-One relationsships](https://www.entityframeworktutorial.net/code-first/configure-one-to-one-relationship-in-code-first.aspx)</li>
-</ul>
+* [GitHub markdown guide - basic syntax](https://github.com/mattcone/markdown-guide/blob/master/_basic-syntax/links.md)
+* [how to use git with visual studio 2022](https://learn.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2022)
+* [Designing a Relational Database for a Cookbook](https://dev.to/amckean12/designing-a-relational-database-for-a-cookbook-4nj6)
+* [Recipes Database](https://github.com/gadsone/sql6)
+* [One-to-One relationsships](https://www.entityframeworktutorial.net/code-first/configure-one-to-one-relationship-in-code-first.aspx)
+* [One-to-Many relationsships](https://www.entityframeworktutorial.net/code-first/configure-one-to-many-relationship-in-code-first.aspx)
+* [Many-to-Many relationsships](https://www.entityframeworktutorial.net/efcore/configure-many-to-many-relationship-in-ef-core.aspx)
