@@ -129,30 +129,40 @@ This is a list of dependencies that you need if you want to run the project loca
 <br/>
 
 ## Usage examples
-1. Make a tutorial on how the project can be used;
-2. Use numbered lists;
+We assume that the project has been accessed on the internet or has been run on a local instance. 
+<br/>
+
+1. For unregistered users:
+  * They can look at recipes and search for them, but not edit;
+  * They can register and/or login;
+2. For logged-in users:
+  * They can create their own recipes;
+  * They can leave comments on recipes;
+  * They can ask for a promotion;
+  * They can search for recipes;
+3. For Administrators:
 <br>
 
 ## API references
-Nothing to mention here
+Nothing to mention here.
 <br/>
 
 ## Bugs
-- [ ] describe any occuring bugs that need to be fixed;
+- [ ] There is a problem with user registration. The application crashes;
+- [ ] There is a problem with user login. The application remains running but the user is not logged in;
+- [ ] The seeded data does not appear;
+- [ ] No restrictions on the information that can be inputted upon creating a new recipe or other object.
 <br/>
 
 ## Future improvements
-- [ ] describe some ideas you would want to implement into your project;
+- [ ] The database models is quite messy due to the lack of understanding about object hierarchies and relations. Needs a touch-up;
+- [ ] Pick a domain for the website and a hosting solution;
+- [ ] Implement a frontend for the website using Bootstrap or another framework. You can get a template from [this site](https://themewagon.com/);
+- [ ] Implement Unit testing;
+- [ ] Implement Integration testing;
+- [ ] Implement pagination in the controllers of objects;
+- [ ] Test Search and Filter options.
 <br>
-
-* problems with the user register and login
-* Seeded data does not appear
-* did search and filter ever work?
-* no pagination
-* no frontend - use bootstrap template (themewagon.com)
-* Unit testing
-* Integration testing
-* Database model is quite messy. needs cleaning up and more understanding of how to implement it
 
 ## Used resources
 <ul>
